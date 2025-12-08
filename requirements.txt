@@ -4,3 +4,5 @@ mir_eval
 numpy
 matplotlib
 ipython
+sklearn
+pandas

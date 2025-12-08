@@ -1,0 +1,6 @@
+mirdata
+librosa
+mir_eval
+numpy
+matplotlib
+ipython

@@ -106,5 +106,36 @@ The notebook `augment_audio_with_noise/augment_audio_with_noise_categories.ipynb
 
 # Model 
 # Evaluation 
+To evaluate how well the two models perform with the processed audio, we ran the embedding with K-means Clustering, and compared the clustering result with their ground truths(instrument labels).
 
+## Files Used
 
+**Input Files**:
+- `audio_labels_1000_balanced.csv` - CSV with metadata columns: `subset`, `instrument`, `instrument_id`, `song_id`, `uuid4`
+-  folders with embeddings - each folder should be a complete set of 1000 .npy files from a model of either dry or processed data
+
+  **Notebook**:
+- `Evaluation/Eval.ipynb` - Main evaluation notebook, contains functions to load, analyze the embedings and produce graphs output
+
+## How to Run
+
+1. **Open the notebook**:
+   - Upload `augment_audio_with_noise/augment_audio_with_noise_categories.ipynb`
+   - Upload required data files
+
+2. **Update paths in cell2**:
+   ```python
+   #replace path name with your own
+   #csv_path = "/Users/xinranchen/Downloads/audio_labels.csv"
+   openL3_path = "/Users/xinranchen/Desktop/MIRGroupAssignment/noise/openl3_mel256_music_512/"
+   audioMAE_path = "/Users/xinranchen/Desktop/MIRGroupAssignment/noise/audiomae_base_768/"
+   save_path = "/Users/xinranchen/Desktop/MIRGroupAssignment/graph/noise"
+   pathFolder = ["ambience", "applause", "bird", "crowd", "fan", "microphone", "rain", "street", "talking", "white_noise" ]
+   ```
+3.**Modify Cells with Folders and Model Name**
+   ```python
+   #example:
+   X, instrument_list, id_list = loadFolder(f"{audioMAE_path}{"applause"}")
+   k_means_clustering(X, instrument_list, "applause")
+   ```
+# Conclusion

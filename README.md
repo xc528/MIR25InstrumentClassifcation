@@ -105,7 +105,11 @@ The notebook `augment_audio_with_noise/augment_audio_with_noise_categories.ipynb
 - **Total**: 10,000 augmented files (1000 originals × 10 noise categories)
 
 # Model 
-First, run all previous data processing pipelines and save the samples in their native file structure either locally or on the cloud. In the , change file destinations as needed accordingly. Second, run the cells sequentially. More comments and notes are within the notebook. Uses CUDA as default. 
+First, **run all previous data processing pipelines** and save the samples **in their native file structure** either locally or on the cloud. 
+
+Second, change file destinations as needed accordingly in [MIR_Final_Project_model_part.ipynb]. Second, run the cells sequentially. More comments and notes are within the notebook. Uses CUDA as default. 
+
+The notebook saves emebdding to your machine or your designated location.
 # Evaluation 
 To evaluate how well the two models perform with the processed audio, we ran the embedding with K-means Clustering, and compared the clustering result with their ground truths(instrument labels).
 

@@ -107,7 +107,7 @@ The notebook `augment_audio_with_noise/augment_audio_with_noise_categories.ipynb
 # Model 
 First, **run all previous data processing pipelines** and save the samples **in their native file structure** either locally or on the cloud. 
 
-Second, change file destinations as needed accordingly in [MIR_Final_Project_model_part.ipynb]. Second, run the cells sequentially. More comments and notes are within the notebook. Uses CUDA as default. 
+Second, change file destinations as needed accordingly in [MIR_Final_Project_model_part.ipynb](MIR_Final_Project_model_part.ipynb). Second, run the cells sequentially. More comments and notes are within the notebook. Uses CUDA as default. 
 
 The notebook saves emebdding to your machine or your designated location.
 # Evaluation 

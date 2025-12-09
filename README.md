@@ -114,7 +114,7 @@ To evaluate how well the two models perform with the processed audio, we ran the
 - `audio_labels_1000_balanced.csv` - CSV with metadata columns: `subset`, `instrument`, `instrument_id`, `song_id`, `uuid4`
 -  folders with embeddings - each folder should be a complete set of 1000 .npy files from a model of either dry or processed data
 
-   *Notebook**:
+**Notebook**:
 - `Evaluation/Eval.ipynb` - Main evaluation notebook, contains functions to load, analyze the embedings and produce graphs output
 
 **Demo Files**:

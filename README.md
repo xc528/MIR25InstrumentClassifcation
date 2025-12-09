@@ -109,7 +109,7 @@ First, **run all previous data processing pipelines** and save the samples **in 
 
 Second, change file destinations as needed accordingly in [MIR_Final_Project_model_part.ipynb](MIR_Final_Project_model_part.ipynb). Second, run the cells sequentially. More comments and notes are within the notebook. Uses CUDA as default. 
 
-The notebook saves emebdding to your machine or your designated location.
+The notebook saves emebddings as .npy files to your machine or your designated location.
 # Evaluation 
 To evaluate how well the two models perform with the processed audio, we ran the embedding with K-means Clustering, and compared the clustering result with their ground truths(instrument labels).
 

@@ -79,15 +79,6 @@ The notebook `augment_audio_with_noise/augment_audio_with_noise_categories.ipynb
 **Demo Files**:
 - `augment_audio_with_noise/demo/` - Contains example augmented files: 10 augmented versions (one per noise category) of a single original audio file, plus the original file for comparison
 
-**Related Scripts**:
-- `augment_audio_with_noise_categories.py` - Python script version (same functionality)
-
-## Requirements
-
-```bash
-pip install torch torchaudio tqdm numpy
-```
-
 ## How to Run
 
 1. **Open the notebook in Google Colab**:

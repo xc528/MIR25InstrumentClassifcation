@@ -149,3 +149,13 @@ To evaluate how well the two models perform with the processed audio, we ran the
 # Conclusion
 Overall, our evaluation showed that both embedding models — AudioMAE and OpenL3 — struggled with the live audio condition. Neither model preserved instrument separability very well once real-room effects, performer variation, and noise were introduced.
 However, OpenL3 was noticeably more stable across different processing conditions. Its clusters remained more consistent across dry, reverberant, and live recordings, whereas AudioMAE’s embedding structure degraded more significantly.
+
+k-means clustering colored by cluster vs by ground truth - noise
+
+AudioMAE:
+![alt text](https://github.com/xc528/MIR25InstrumentClassifcation/blob/330e5cb3cc344ba7bc9c7935e0bfb46aada9a372/Evaluation/Graphs/forReadMe/AudioMAE_Noise_AllTogether.png)
+![alt text](https://github.com/xc528/MIR25InstrumentClassifcation/blob/330e5cb3cc344ba7bc9c7935e0bfb46aada9a372/Evaluation/Graphs/forReadMe/AudioMAE_NoiseConfusionMatrixAllTogether.png)
+
+openL3:
+![alt text](https://github.com/xc528/MIR25InstrumentClassifcation/blob/330e5cb3cc344ba7bc9c7935e0bfb46aada9a372/Evaluation/Graphs/forReadMe/OpenL3_Noise_AllTogether.png)
+![alt text](https://github.com/xc528/MIR25InstrumentClassifcation/blob/330e5cb3cc344ba7bc9c7935e0bfb46aada9a372/Evaluation/Graphs/forReadMe/OpenL3_Noise_ConfusionMatrixAllTogether.png)

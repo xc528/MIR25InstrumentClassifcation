@@ -147,3 +147,5 @@ To evaluate how well the two models perform with the processed audio, we ran the
    k_means_clustering(X, instrument_list, "applause")
    ```
 # Conclusion
+Overall, our evaluation showed that both embedding models — AudioMAE and OpenL3 — struggled with the live audio condition. Neither model preserved instrument separability very well once real-room effects, performer variation, and noise were introduced.
+However, OpenL3 was noticeably more stable across different processing conditions. Its clusters remained more consistent across dry, reverberant, and live recordings, whereas AudioMAE’s embedding structure degraded more significantly.
